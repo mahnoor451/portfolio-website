@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header">
+        <nav class="nav_header">
+            <ul class="nav_ul">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="home">
+            <div class="img">
+                <img src="girl-pic.png" alt="Profile Image">
+            </div>
+            <div class="content">
+            <h1>Welcome to My Portfolio</h1>
+            <h2><span class="typing"></span></h2>
+          <div class="btn-group">
+  <button class="content_button"><a href="#projects">View Projects</a></button>
+  <button class="content_button"><a href="#contact">Contact Me</a></button>
+</div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about_content">
+        <h2>About Me</h2>
+         <p>
+I am a <span class="highlight">motivated</span> and detail-oriented individual with a strong foundation in <span class="highlight">writing</span> and <span class="highlight">nuclear policy research</span>, currently enhancing my skills through an internship at The Diplomatic Insight.
+</p>
+
+<p>
+With a background in International Relations, I have developed analytical and research abilities that enable me to produce well-structured and insightful content on global and strategic issues.
+</p>
+
+<p>
+Alongside my research expertise, I have built front-end development skills in HTML, CSS, and JavaScript, combining creativity with technical precision.
+</p>
+
+     <button class="cv-btn"><a href="mahnoor-ishaq-cv.pdf" target="_blank">View CV</a></button>   
+<button  class="cv-btn"><a href="mahnoor-ishaq-cv.pdf" target="_blank" download>Download CV</a></button>
+        </div>
+        <img src="undraw-webdevelopment-icon.svg" class="about_icon" alt="Web Development Icon">
+
+    </section>
+
+ <section class="skills" id="skills">
+  <h2 class="section-title">My Skills</h2>
+
+  <div class="skills-container">
+
+    <!-- Skill Card -->
+    <div class="skill-card">
+      <h3>HTML & CSS</h3>
+      <div class="skill-bar">
+        <div class="skill-fill" style="width: 90%;"></div>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <h3>JavaScript</h3>
+      <div class="skill-bar">
+        <div class="skill-fill" style="width: 80%;"></div>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <h3>Research</h3>
+      <div class="skill-bar">
+        <div class="skill-fill" style="width: 85%;"></div>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <h3>Writing</h3>
+      <div class="skill-bar">
+        <div class="skill-fill" style="width: 88%;"></div>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <h3>Canva Design</h3>
+      <div class="skill-bar">
+        <div class="skill-fill" style="width: 88%;"></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    <section id="projects" class="projects">
+      <div class="projects_container">
+        <div class="image_slider">
+            <div class="slide">
+       <img src="canva-modal-login.png" alt="">
+       <span class="img_a"><a href="modal-login-form/index.html" target="_blank">Modal Login App</a></span>
+       </div>
+       <div class="slide">
+       <img src="canva-profile-generator.png" alt="">
+       <span class="img_a"><a href="random-person-generator/index.html" target="_blank">Profile Generator App</a></span>
+       </div>
+       <div class="slide">
+        <img src="canva-language-translator.png" alt="">
+        <span class="img_a"><a href="language-translator/index.html" target="_blank">Language Translator App</a></span>
+       </div>
+       <div class="slide">
+       <img src="canva-quote-generator.png" alt="">
+       <span class="img_a"><a href="quote-generator/index.html" target="_blank">Quote Generator App</a></span>
+       </div>
+       <div class="slide">
+       <img src="canva-random-pic-generator.png" alt="">
+       <span class="img_a"><a href="random-picture-generator/index.html" target="_blank">Random Picture Generator App</a></span>
+       </div>
+       <div class="slide">
+       <img src="canva-rock-scissor.png" alt="">
+       <span class="img_a"><a href="rock-paper-scissors/index.html" target="_blank">Rock Paper Scissors Game</a></span>
+       </div>
+       <div class="slide">
+       <img src="canva-weather.png" alt="">
+       <span class="img_a"><a href="weather-app/index.html" target="_blank">Weather App</a></span>
+       </div>
+       <div class="slide">
+       <img src="canva-password-generator.png" alt="">
+       <span class="img_a"><a href="random-password-genartor/index.html" target="_blank">Password Generator App</a></span>
+       </div>
+       
+       </div>
+        <i class="fa-solid fa-angles-left btn prev"></i>
+       <i class="fa-solid fa-angles-right btn next"></i>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+      <form action="" id="form">
+         <h2>Contact Me</h2>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" placeholder="Enter Name"/>
+        <small id="nameError"></small>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Email">
+        <small id="emailError"></small>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" placeholder="Password">
+        <small id="passwordError"></small>
+        <label>Phone Number</label>
+<input type="tel" id="phone" placeholder="e.g. +92 300 1234567">
+<small id="phoneError"></small>
+<label for="msg">Message:</label>
+<textarea name="msg" id="msg" placeholder="Enter your message"></textarea>
+        <button type="submit" id="btn">Sign Up</button>
+        <p id="successMsg"></p>
+      </form>
+    </div>
+      </div>
+    </section>
+    </main>
+    
+      <footer class="footer">
+
+  <h3>Mahnoor Ishaq</h3>
+  <p>Frontend Developer | Writer | Researcher</p>
+
+  <div class="footer-links">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <div class="socials">
+    <i class="fa-brands fa-linkedin"></i>
+    <i class="fa-brands fa-github"></i>
+    <i class="fa-brands fa-twitter"></i>
+  </div>
+
+  <p class="copyright">
+    © 2026 Mahnoor Ishaq. All rights reserved.
+  </p>
+
+</footer>
+       
+    <script src="main.js"></script>
+</body>
+</html>
