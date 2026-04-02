@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="weather-card">
+        <div class="input-btn-div">
+      <input type="text" id="city" class="temp" placeholder="Enter Location" />
+      <button id="btn">Get Weather</button>
+      </div>
+
+      <div class="header">
+        <div>
+          <h3>Current weather</h3>
+          <span id="time">11:52 AM</span>
+        </div>
+
+        <button class="switch-btn" id="btn">Seeing different weather?</button>
+      </div>
+
+      <div class="main-weather">
+        <div class="icon">
+          <img id="weatherIcon" width="80" />
+        </div>
+
+        <div class="temperature">
+          <h1 id="temp">28°C</h1>
+        </div>
+
+        <div class="condition">
+          <h3 id="weather">Sunny</h3>
+          <p>Feels like <span id="feels">33°</span></p>
+        </div>
+      </div>
+
+      <p class="description">
+        There will be mostly sunny skies. The high will be 30°.
+      </p>
+
+      <div class="details">
+        <div class="detail">
+          <p>Wind</p>
+          <h4 id="wind">10 km/h</h4>
+        </div>
+
+        <div class="detail">
+          <p>Humidity</p>
+          <h4 id="humidity">53%</h4>
+        </div>
+
+        <div class="detail">
+          <p>Visibility</p>
+          <h4 id="visibility">3 km</h4>
+        </div>
+
+        <div class="detail">
+          <p>Pressure</p>
+          <h4 id="pressure">1012 mb</h4>
+        </div>
+
+        <div class="detail">
+          <p>Dew point</p>
+          <h4 id="dew">18°</h4>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

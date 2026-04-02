@@ -1,0 +1,97 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.password-container{
+    width: 500px;
+    /* border: 2px solid black; */
+    padding: 20px;
+    background-color: rgb(178, 212, 226);
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .3);
+}
+
+.input-container{
+    border: solid 2px black;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: whitesmoke;
+}
+
+.input{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 24px;
+    letter-spacing: 4px;
+}
+
+.input::placeholder{
+    letter-spacing: 0px;
+}
+
+.fa-copy {
+    cursor: pointer;
+    opacity: .3;
+}
+
+.fa-copy:hover{
+    opacity: 0.7;
+}
+
+.btn {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.btn:hover{
+    background-color: green;
+}
+
+.btn:active{
+    transform: scale(0.95);
+} 
+
+.alert-container{
+    width: 300px;
+    background-color: lightgreen;
+    height: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+
+.active {
+    right: -300px;
+}
+
+@media screen and (max-width: 450px){
+  .password-container{
+    width: 400px;
+    /* border: 2px solid black; */
+    padding: 20px;
+    background-color: rgb(178, 212, 226);
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .3);
+}
+}

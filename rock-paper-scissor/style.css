@@ -1,0 +1,55 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+ }
+
+ h1{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 100px;
+ }
+
+ p{
+    text-align: center;
+    font-size: 1.5rem;
+ }
+
+ .buttons{
+    display: flex;
+    justify-content: center;
+    /* padding: 2rem; */
+ }
+
+ button{
+    padding: 0.5rem ;
+    font-size: 3rem;
+    margin: .5rem;
+    border-radius: 10px;
+    border: none;
+    background-color: blueviolet;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+ }
+
+ button:hover{
+    opacity: 0.7;
+ }
+
+ #rock{
+    background-color: yellowgreen;
+ }
+
+ #scissor{
+   background-color:  #2196f3;
+ }
+
+#user-score{
+    color: #2196f3;
+}
+
+#computer-score{
+color: blueviolet;
+}

@@ -1,0 +1,161 @@
+body {
+  background: #4b4376;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.weather-card {
+  width: 650px;
+  background: #5a5287;
+  /* background: rgba(0, 0, 0, .3); */
+  padding: 25px;
+  border-radius: 15px;
+  color: white;
+  margin: 8px;
+}
+
+.search {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.search input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 8px 0 0 8px;
+  font-size: 16px;
+}
+
+.search button {
+  padding: 10px 15px;
+  border: none;
+  background: #6e67a0;
+  color: white;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.switch-btn {
+  background: #6e67a0;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 20px;
+  color: white;
+}
+
+.main-weather {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.icon {
+  /* width:70px;
+  height:70px;
+  border-radius:50%;
+  background:linear-gradient(orange, yellow);
+  margin-right:20px; */
+}
+
+.temperature h1 {
+  font-size: 60px;
+  margin: 0;
+}
+
+.condition {
+  margin-left: 25px;
+}
+
+.description {
+  margin-top: 5px;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.detail p {
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.detail h4 {
+  margin: 4px 0;
+}
+
+input {
+  width: 75%;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  background-color: #4b4376;
+  color: white;
+}
+
+input::placeholder {
+}
+
+input:focus {
+  outline: 0;
+  color: whitesmoke;
+}
+
+#btn {
+  height: 40px;
+  padding: 5px;
+  font-size: 15px;
+  margin-left: 5px;
+  margin-top: 8px;
+  padding: 0 10px;
+  font-size: 15px;
+  transition: all 0.3s;
+}
+
+#btn:hover {
+  /* color: white; */
+  opacity: 0.7;
+  transform: scale(1.1);
+}
+
+.input-btn-div {
+  margin: 20px 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .weather-card {
+    width: 100%;
+    background: #5a5287;
+    /* background: rgba(0, 0, 0, .3); */
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+    margin: 8px;
+  }
+
+  .temperature h1 {
+    font-size: 40px;
+    margin: 0;
+  }
+
+  input{
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  #btn{
+    padding: 10px 15px;
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Login Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="first-container">
+        <h1>Welcome to my website!</h1>
+        <button class="open-modal-btn">Login</button>
+    </div>
+    <form action="" id="login-form">
+    <div class="second-container display-none">
+     <label for="user-name">User Name:</label> 
+     <input type="text" id="user-name" name="user-name" placeholder="Enter username" required>  
+     <label for="password">Password:</label>
+     <input type="password" id="password" minlength="6" name="password" placeholder="Enter Password" required>
+     <label for="email">Email:</label>
+     <input type="email" id="email" name="email" placeholder="Enter Email" required>
+     <button id="submit-btn">Submit</button>
+     <p id="success-message" class="success"></p>
+     <div class="close-icon">
+        <i class="fa-solid fa-xmark"></i>
+        </div>
+    </div>
+</form>
+    <script src="index.js"></script>
+</body>
+</html>
